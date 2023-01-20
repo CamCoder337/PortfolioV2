@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #172a3f;
+}
+
+.logo{
+    font-family: Audiowide;
+    font-size: 38px;
+    text-shadow: 1px 1px 1px#2a3643;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,210 @@
+
+
+.text{
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-justify: center;
+    color: #fff;
+}
+
+
+.name{
+    font-family: Audiowide;
+    font-weight: 200px;
+    font-size: 4.8rem;
+    color: #de6a08;
+}
+
+.pulse-anim{
+    width: 100px;
+    height: 50px;
+    background: #de6a08;
+    border-radius: 50px;
+    margin: 100px auto 0;
+    box-shadow: 0 0 0 0 #de6a08;
+    animation: pulse 2.3s infinite;
+    padding-left: 5px;
+    padding-top: 13px;
+
+}
+
+.pulse-anim a{
+    text-align: center;
+    text-justify: center;
+    color: #162637;
+    font-family: Audiowide;
+    font-weight: 200px;
+    font-size: 1rem;
+}
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 0 18px rgb(222, 106, 8, 0.01);
+    }
+    
+}
+
+.nope-anim.nope-anim:hover{
+    animation: nope 0.4s forwards;
+}
+
+@keyframes nope {
+    0%{
+        transform: translate(0px);
+    }
+    20%{
+        transform: translate(-10px);
+    }
+    40%{
+        transform: translate(10px);
+    }
+    60%{
+        transform: translate(-10px);
+    }
+    80%{
+        transform: translate(10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .icon{
+    width: 175px;
+    height: 175px;
+}
+
+.container .icon path{
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #de6a08;
+
+}
+
+.container .icon.bra path{
+    stroke-dasharray: 500;
+    stroke-dashoffset: -425;
+    animation: animate-bra 5s infinite;
+}
+
+
+@keyframes animate-bra {
+    0%{
+        stroke-dashoffset: -425;
+    }
+    20%{
+        stroke-dashoffset: -350;
+    }
+    40%{
+        stroke-dashoffset: -275;
+    }
+    60%{
+        stroke-dashoffset: -200;
+    }
+    80%{
+        stroke-dashoffset: -100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: #de6a08;
+    }
+}
+
+.loader-container{
+    position: absolute;
+    background: #162637;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.loader-container .loader{
+    width: 600px;
+}
+
+.loader-container .loader path{
+    fill: transparent;
+    stroke-width: 1;
+    stroke: #de6a08;
+    stroke-dasharray: 500;
+    stroke-dashoffset: -425;
+    animation: loading-loader 3s 1 ;
+}
+
+.loader-container .loader path::after{
+    fill:#de6a08;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+}
+
+.loader-container .copyrigth{
+    position: fixed;
+    bottom: 1rem;
+    text-justify: center;
+    color:#de6a08;
+    font-family: Audiowide, sans-serif;
+}
+
+.loader-container .copyrigth a{
+    color:#de6a08;
+}
+.loader-container .copyrigth a:hover{
+    color:#fff;
+}
+
+@keyframes loading-loader {
+    0%{
+        stroke-dashoffset: -425;
+    }
+    20%{
+        stroke-dashoffset: -350;
+    }
+    40%{
+        stroke-dashoffset: -275;
+    }
+    60%{
+        stroke-dashoffset: -200;
+    }
+    80%{
+        stroke-dashoffset: -100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: #de6a08;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .container{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container{
+        display: none;
+    }
+
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*
+1: #141d37
+2: #085fce
+3: #3de2ff
+4: #162637
+5: #da6220
+6: #de6a08
+
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+*/
+.nav-container{
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+}
+.nav-burger{
+    display: none;
+}
+.nav-bar{
+    transform: translateX(-50%);
+    font-family: 'Audiowide';
+    font-weight: 500;
+    font-size: x-large;
+    background: #162637;
+
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50px;
+
+}
+.nav-bar ul {
+    display: flex;
+    
+}
+.nav-bar ul li a{
+    display: block;
+    color: #de6a08;
+    font-size: 0.7rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.25s;
+    margin: 0 5px
+}
+.nav-bar ul li a:hover{
+    color: #162637;
+    background: #de6a08;
+    /*cursor: pointer;*/
+}
+.nav-bar ul li a.active{
+    color: #162637;
+    background: #de6a08;
+}
+
+/*margin: 6px 5px 5px 10px;*/
+@media only screen and (max-width: 576px) {
+    .nav-burger{
+        display: block;
+        cursor: pointer;
+        border-radius: 50%;
+        background: #162637;
+        width: 55px;
+        height: 55px;
+        padding-top: 7px;
+        padding-left: 2px;
+        justify-content: center;
+        margin-left: -25px;
+        transition: 0.5s;
+
+    }
+    .nav-burger .line{
+        width: 30px;
+        height: 5px;
+        border-radius: 50px;
+        background: #de6a08;
+        margin: 6px 5px 5px 10px;
+        transition: 0.5s;
+    }
+    .nav-burger.active .line{
+        transition: 0.5s;
+        margin-left: 17.5px;
+        width: 15px;
+    }
+
+    .nav-container{
+        width: 600px;
+        
+    }
+    .nav-bar.active{
+        opacity: 1;
+        display: block;
+        transition: 0.5s;
+
+    }
+    .nav-bar{
+        opacity: 0;
+        height: 100vmax;
+        transition: 0.5s;
+        display: none;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+        transition: 0.5s;
+        padding-top: 40px;
+    } 
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        margin-top: 60px;
+        font-size: 1rem;
+    
+    }
+    
+}
