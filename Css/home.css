@@ -156,6 +156,8 @@
     position: fixed;
     bottom: 1rem;
     text-justify: center;
+    text-align: center;
+    justify-content: center;
     color:#de6a08;
     font-family: Audiowide, sans-serif;
 }
