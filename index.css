@@ -40,7 +40,6 @@ body{
         background: #de6a08;
         z-index: 1000;
         flex-direction: column;
-
     }
 
     .orientor_container .icon{
@@ -56,7 +55,7 @@ body{
     .orientor_container .warn{
         display: inline-flex;
         font-family: Audiowide;
-        font-size: 2rem;
+        font-size: 1.1rem;
         text-shadow: 1px 1px 1px#2a3643;
         color: #fff;
         letter-spacing: -0.15px;
