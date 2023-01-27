@@ -71,10 +71,15 @@
 
 
 .container {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 180px;
+    height: 180px;
+    bottom: 1.2rem;
+    left: .5%;
+    transform: translateX(-0.5%);
 }
 
 .container .icon{
@@ -162,6 +167,11 @@
     font-family: Audiowide, sans-serif;
 }
 
+.copyrigth{
+    text-align: center;
+    justify-content: center;
+}
+
 .loader-container .copyrigth a{
     color:#de6a08;
 }
@@ -195,10 +205,13 @@
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
     .container{
-        display: none;
+        bottom: 0.8rem;
+        left: 2%;
+        transform: translateX(-25%);
+        
     }
 
 }
@@ -207,6 +220,29 @@
 
     .container{
         display: none;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .text{
+        font-size: 1.6rem;
+        transition: .2s;
+    }
+
+}
+
+@media only screen and (max-width: 368px) {
+
+    .text{
+        font-size: 1.3rem;
+        transition: .2s;
+    }
+
+    .name{
+        font-size: 4.2rem;
+        transition: .2s;
     }
 
 }

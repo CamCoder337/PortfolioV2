@@ -139,3 +139,12 @@
     }
     
 }
+
+/*margin: 6px 5px 5px 10px;*/
+@media only screen and (max-width: 595px) {
+    .nav-bar ul li a{
+        font-size: 0.6rem;
+        transition: .2s;
+    }
+
+}
