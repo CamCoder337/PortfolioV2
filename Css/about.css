@@ -1,0 +1,236 @@
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 425px;
+    width: 425px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#de6a08, #ad4328b5);
+    animation: object1 3s linear infinite;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#de6a08, #ad4328b5);
+    animation: object2 3s linear infinite;
+}
+
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+
+.topline{
+    /* Hello Text*/
+    font-family: Audiowide;
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #de6a08;
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #de6a08;
+}
+h1{
+    font-family: Poppins;
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff
+}
+
+.multiText{
+    font-family: Audiowide;
+    color: #de6a08;
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: poppins;
+}
+
+.btns{
+   width: 100%;
+   position: relative;
+   left: 150px; 
+}
+button{
+    font-family: Audiowide;
+    cursor: pointer;
+    background-color: #de6a08;
+    border-radius: 50px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 400;
+    color: #162637;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
+}
+
+button:hover{
+    background-color: #162637;
+    color: white;
+    box-shadow: 0 0 0 0 #de6a08;
+    animation: pulse 2.4s infinite;
+}
+button a{
+    display: block;
+    color: #162637;
+}
+
+button a:hover{
+    color: white;
+}
+
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 0 18px rgb(222, 106, 8, 0.01);
+    }
+    
+}
+
+
+.imgbox{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.imgbox img{
+    position: relative;
+    height: 450px;
+    width: calc(650px -80px);
+    top: 0px;
+    right: 0px;
+    border-radius: 50px;
+    /*background-color: #162637;*/
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+    z-index: -5;
+    background: linear-gradient(45deg, #162637, #de6a08);
+}
+
+@keyframes animateUser {
+    50%{
+        right: 70px;
+    }
+}
+
+.imgbox #splash{
+    position: absolute;
+    top: 50%;/*15*/
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        top: 49%;/*15*/
+        left: 51%;
+        width: 155%;
+    }   
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    top: 1rem;
+    transform: translateX(0.5%);
+    right: 25rem;
+    z-index: -6;
+}
+
+.container .icon{
+    width: 175px;
+    height: 175px;
+}
+
+.container .icon path{
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #de6a08;
+
+}
+
+.container .icon.bra path{
+    stroke-dasharray: 500;
+    stroke-dashoffset: -425;
+    animation-delay: 1s;
+    animation: animate-bra 5s infinite;
+}
+
+
+@keyframes animate-bra {
+    0%{
+        stroke-dashoffset: -425;
+    }
+    20%{
+        stroke-dashoffset: -350;
+    }
+    40%{
+        stroke-dashoffset: -275;
+    }
+    60%{
+        stroke-dashoffset: -200;
+    }
+    80%{
+        stroke-dashoffset: -100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
