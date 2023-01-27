@@ -30,10 +30,11 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100vmax;
+    height: 100vmax;
     background: #de6a08;
     z-index: 1000;
     flex-direction: column;
-    opacity: 1;
 }
 
 .orientor_container .icon{
