@@ -40,6 +40,7 @@ body{
         background: #de6a08;
         z-index: 1000;
         flex-direction: column;
+        opacity: 1;
     }
 
     .orientor_container .icon{
