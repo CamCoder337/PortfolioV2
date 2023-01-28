@@ -298,3 +298,13 @@ button a:hover{
     }
     
 }
+
+@media only screen and (max-width: 360px) {
+    p{
+        font-size: .9em;
+    }
+    .btns{
+        left: 30px;
+    }
+    
+}
