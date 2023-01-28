@@ -280,6 +280,15 @@ button a:hover{
     }
 }
 
+@media only screen and (max-width: 380px) {
+    p{
+        font-size: 1.09em;
+    }
+    .btns{
+        left: 30px;
+    }
+}
+
 @media only screen and (max-width: 368px) {
     p{
         font-size: 1.05em;
