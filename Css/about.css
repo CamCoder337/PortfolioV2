@@ -12,8 +12,8 @@
 .wrapper::before{
     position: absolute;
     content: '';
-    height: 425px;
-    width: 425px;
+    height: 405px;
+    width: 405px;
     border-radius: 50%;
     left: -12%;
     top: 40%;

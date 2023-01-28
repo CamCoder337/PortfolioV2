@@ -28,6 +28,7 @@
     position: fixed;
     bottom: 1rem;
     left: 50%;
+    z-index: 500;
 }
 .nav-burger{
     display: none;
@@ -59,7 +60,7 @@
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.25s;
-    margin: 0 5px
+    margin: 0 5px;
 }
 .nav-bar ul li a:hover{
     color: #162637;
