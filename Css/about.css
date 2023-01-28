@@ -234,3 +234,30 @@ button a:hover{
         stroke-dashoffset: 0;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+
+}
+
+@media only screen and (max-width: 460px) {
+
+}
+
+@media only screen and (max-width: 610px) {
+
+}
+
+@media only screen and (max-width: 368px) {
+
+}
+
+
+@media only screen and (max-height: 415px) {
+
+}

@@ -31,16 +31,16 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vmax;
-    height: 100vmax;
+    width: 100%;
+    height: 100%;
     background: #de6a08;
     z-index: 1000;
     flex-direction: column;
 }
 
 .orientor_container .icon{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 .orientor_container .icon .path{
     stroke-width: 15;
