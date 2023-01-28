@@ -306,5 +306,9 @@ button a:hover{
     .btns{
         left: 30px;
     }
+    .wrapper::before {
+        width: 350px;
+        height: 350px;
+    }
     
 }
