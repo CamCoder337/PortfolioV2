@@ -50,7 +50,7 @@
 }
 .cols0{
     width: 60%;
-    z-index: 5;
+    z-index: 10;
 }
 
 .topline{
@@ -74,7 +74,7 @@
 h1{
     font-family: Poppins;
     display: block;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 900;
     color: #fff
 }
@@ -96,7 +96,8 @@ p{
 .btns{
    width: 100%;
    position: relative;
-   left: 150px; 
+   left: 150px;
+   z-index: 5;
 }
 button{
     font-family: Audiowide;
@@ -110,17 +111,15 @@ button{
     padding: 8px 14px;
     margin: 40px 5px;
     text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
 }
 
 button:hover{
     background-color: #162637;
     color: white;
     box-shadow: 0 0 0 0 #de6a08;
-    animation: pulse 2.4s infinite;
+    animation: pulse 2.3s infinite;
 }
 button a{
-    display: block;
     color: #162637;
 }
 
@@ -132,9 +131,7 @@ button a:hover{
     to{
         box-shadow: 0 0 0 18px rgb(222, 106, 8, 0.01);
     }
-    
 }
-
 
 .imgbox{
     position: relative;
@@ -152,7 +149,7 @@ button a:hover{
     /*background-color: #162637;*/
     transform: rotateY(180deg);
     animation: animateUser 4s linear infinite;
-    z-index: -5;
+    z-index: -10;
     background: linear-gradient(45deg, #162637, #de6a08);
 }
 
@@ -160,16 +157,6 @@ button a:hover{
     50%{
         right: 70px;
     }
-}
-
-.imgbox #splash{
-    position: absolute;
-    top: 50%;/*15*/
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(-35deg);
-    width: 160%;
-    filter: saturate(200%);
-    animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
@@ -190,7 +177,7 @@ button a:hover{
     top: 1rem;
     transform: translateX(0.5%);
     right: 25rem;
-    z-index: -6;
+    z-index: -15;
 }
 
 .container .icon{
@@ -235,29 +222,70 @@ button a:hover{
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .container{
+        display: none;
+    }
+    p{
+        font-size: 1em;
+    }
+}
+
 @media only screen and (max-width: 800px) {
-
-
-}
-
-@media only screen and (max-width: 576px) {
-
-
-}
-
-@media only screen and (max-width: 460px) {
-
+    .container{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 610px) {
+    p{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    .btns{
+        left: 120px;
+        transition: 1s;
+    }
+    .imgbox{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        transition: 2s;
+    }
+    .imgbox img{
+        height: 250px;
+        width: calc(450px -80px);
+        animation: none;
+    }
+}
 
+@media only screen and (max-width: 576px) {
+    p{
+        font-size: 1.2em;
+    }
+    .cols0{
+        width: 100%;
+    }
+    .cols1{
+        display: none;
+    }
+    .btns{
+        left: 60px;
+    }
+    .wrapper::after {
+        left: 70%;
+        animation: object2 6s linear infinite;
+    }
 }
 
 @media only screen and (max-width: 368px) {
-
-}
-
-
-@media only screen and (max-height: 415px) {
-
+    p{
+        font-size: 1.05em;
+    }
+    .btns{
+        left: 30px;
+    }
+    
 }
