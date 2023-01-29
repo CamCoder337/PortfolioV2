@@ -130,7 +130,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    z-index: 1000;
+    z-index: 10001;
     top: 0;
     left: 0;
     right: 0;
