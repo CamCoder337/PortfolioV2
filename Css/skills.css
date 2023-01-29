@@ -86,7 +86,7 @@
         gap: 1.5rem;
     }
     .skills-section_title h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 200;
     }
     .skills-section_cards .card .card-icon img{
@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 400px){
     .skills-section_title h2{
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 100;
     }
 }
