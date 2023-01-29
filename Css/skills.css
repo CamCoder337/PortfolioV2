@@ -60,10 +60,6 @@
     transition: .3s ease;
     border-radius: 50%;
 }
-
-.skills-section_cards .card .card-icon img{
-    width: 40px;
-}
 /* .skills-section_cards .card .card-icon:hover{
     border: none;
 } */
@@ -88,9 +84,6 @@
     .skills-section_title h2{
         font-size: 1.4rem;
         font-weight: 200;
-    }
-    .skills-section_cards .card .card-icon img{
-        width: auto;
     }
 }
 
