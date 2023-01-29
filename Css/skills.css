@@ -1,0 +1,109 @@
+
+.skills{
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 9rem 15rem 5rem;
+    background: #172a3f;
+}
+
+.skills-section {
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 2rem;
+    opacity: 1;
+
+    border-radius: 15px;
+}
+
+.skills-section_title{
+    overflow: hidden;
+    border-bottom: 1.25px solid #de6a08;
+    margin-bottom: 1.5rem;
+}
+
+.skills-section_title h2{
+    position: relative;
+    font-family: Audiowide;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1.5px #de6a08;
+    margin-left: 10px;
+}
+.skills-section_cards{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skills-section_cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.skills-section_cards .card .card-icon{
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    border-radius: 50%;
+}
+
+.skills-section_cards .card .card-icon img{
+    width: 40px;
+}
+/* .skills-section_cards .card .card-icon:hover{
+    border: none;
+} */
+
+.skills-section_cards .card h3{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    font-family: Audiowide;
+}
+
+
+@media screen and (max-width: 640px){
+    .skills {
+        padding: 9rem 1rem 4rem;
+    }
+    .skills-section__cards {
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .skills-section_title h2{
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    .skills-section_cards .card .card-icon img{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .skills-section_title h2{
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    .skills {
+        padding: 9rem 6rem 4rem;
+    }
+}
+
