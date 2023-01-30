@@ -25,6 +25,8 @@
     overflow: hidden;
     border-bottom: 1.25px solid #de6a08;
     margin-bottom: 1.5rem;
+    animation: fadeInRight;
+    animation-duration: 5s;
 }
 
 .skills-section_title h2{
@@ -37,6 +39,8 @@
     text-transform: uppercase;
     -webkit-text-stroke: 1.5px #de6a08;
     margin-left: 10px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
 }
 .skills-section_cards{
     display: flex;
@@ -50,6 +54,8 @@
     flex-direction: column;
     align-items: center;
     gap: .5rem;
+    animation: flipInY;
+    animation-duration: 3s;
 }
 .skills-section_cards .card .card-icon{
     padding: 1rem;
@@ -60,15 +66,14 @@
     transition: .3s ease;
     border-radius: 50%;
 }
-/* .skills-section_cards .card .card-icon:hover{
-    border: none;
-} */
 
 .skills-section_cards .card h3{
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: .15rem;
     font-family: Audiowide;
+    animation: fadeInUp;
+    animation-duration: 3s;
 }
 
 
@@ -79,7 +84,7 @@
     .skills-section__cards {
         justify-content: space-around;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
     .skills-section_title h2{
         font-size: 1.4rem;
