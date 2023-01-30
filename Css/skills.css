@@ -57,6 +57,7 @@
     animation: flipInY;
     animation-duration: 3s;
 }
+
 .skills-section_cards .card .card-icon{
     padding: 1rem;
     overflow: hidden;
