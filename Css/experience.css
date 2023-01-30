@@ -12,15 +12,16 @@
     gap: 1rem;
 }
 
-.experience-intership{
+.experience-internship{
     opacity: 1;
     z-index: 2;
     width: 100%;
     margin-bottom: 2rem;
     padding: 0 15rem;
+    background: #172a3f;
 }
 
-.experience-intership_title{
+.experience-internship_title{
     overflow: hidden;
     border-bottom: 1.25px solid #de6a08;
     margin-bottom: 1.5rem;
@@ -28,7 +29,7 @@
     animation-duration: 5s; */
 }
 
-.experience-intership_title h2{
+.experience-internship_title h2{
     position: relative;
     font-family: Audiowide;
     font-size: 2rem;
@@ -42,14 +43,14 @@
     animation-duration: 2s; */
 }
 
-.experience-intership_cards{
+.experience-internship_cards{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     gap: 2rem;
 }
 
-.experience-intership_cards .card{
+.experience-internship_cards .card{
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -59,10 +60,9 @@
     transform: translateY(0%) translateZ(0);
 }
 
-.experience-intership_cards .card-header{
-    font-family: Audiowide;
+.experience-internship_cards .card-header{
+    font-family: Audiowide, sans-serif;
     color: #de6a08;
-    font-size: 1rem;
     font-weight: 100;
     display: flex;
     align-items: flex-start;
@@ -71,7 +71,6 @@
     flex-wrap: wrap;
 }
 .experience-internship_cards .card-header_left{
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -85,13 +84,13 @@
     gap: 0.25rem;
 }
 
-.experience-intership_cards .card-description{
+.experience-internship_cards .card-description{
     font-family: Poppins, sans-serif;
     color: #fff;
     padding: 1rem 0 0.5rem;
 }
 
-.experience-intership_cards .card-footer{
+.experience-internship_cards .card-footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -99,13 +98,13 @@
     font-family: Poppins, sans-serif;
     font-size: 0.75rem;
 }
-.experience-intership_cards .card-footer span{
+.experience-internship_cards .card-footer span{
     color: #de6a08;
     font-family: Audiowide, sans-serif;
     font-size: 1rem;
 }
 
-.experience-intership_cards .card:is(:not(:last-child)):after{
+.experience-internship_cards .card:is(:not(:last-child)):after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -146,36 +145,12 @@
 }
 
 
-@media screen and (max-width: 640px){
-    .skills {
-        padding: 9rem 1rem 4rem;
+@media screen and (max-width: 991px){
+    .experience-internship{
+        padding: 0 1rem;
     }
-    .skills-section__cards {
-        justify-content: space-around;
-        align-items: center;
-        gap: 1.2rem;
-    }
-    .skills-section_title h2{
-        font-size: 1.4rem;
-        font-weight: 200;
-    }
-    .skills-section_cards .card h3{
-        font-size: .8rem;
-        letter-spacing: .13rem;
-
-    }
-}
-
-@media screen and (max-width: 400px){
-    .experience-intership_title h2{
-        font-size: 1rem;
-        font-weight: 100;
-    }
-}
-
-@media screen and (max-width: 1340px){
-    .experience {
-        padding: 9rem 6rem 4rem;
+    .experience-project{
+        padding: 0 1rem;
     }
 }
 
