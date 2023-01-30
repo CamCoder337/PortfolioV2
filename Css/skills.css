@@ -90,6 +90,11 @@
         font-size: 1.4rem;
         font-weight: 200;
     }
+    .skills-section_cards .card h3{
+        font-size: .8rem;
+        letter-spacing: .13rem;
+
+    }
 }
 
 @media screen and (max-width: 400px){
