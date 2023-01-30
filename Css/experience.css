@@ -144,3 +144,38 @@
     /* animation: fadeInLeftBig;
     animation-duration: 2s; */
 }
+
+
+@media screen and (max-width: 640px){
+    .skills {
+        padding: 9rem 1rem 4rem;
+    }
+    .skills-section__cards {
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .skills-section_title h2{
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    .skills-section_cards .card h3{
+        font-size: .8rem;
+        letter-spacing: .13rem;
+
+    }
+}
+
+@media screen and (max-width: 400px){
+    .experience-intership_title h2{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    .experience {
+        padding: 9rem 6rem 4rem;
+    }
+}
+
