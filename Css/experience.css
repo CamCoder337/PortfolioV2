@@ -25,8 +25,8 @@
     overflow: hidden;
     border-bottom: 1.25px solid #de6a08;
     margin-bottom: 1.5rem;
-    /* animation: fadeInRight;
-    animation-duration: 5s; */
+    animation: fadeInRight;
+    animation-duration: 5s;
 }
 
 .experience-internship_title h2{
@@ -39,8 +39,8 @@
     text-transform: uppercase;
     -webkit-text-stroke: 1.5px #de6a08;
     margin-left: 10px;
-    /* animation: fadeInLeftBig;
-    animation-duration: 2s; */
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
 }
 
 .experience-internship_cards{
@@ -58,6 +58,8 @@
     padding-bottom: 1rem;
     opacity: 1;
     transform: translateY(0%) translateZ(0);
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
 .experience-internship_cards .card-header{
@@ -98,6 +100,10 @@
     font-family: Poppins, sans-serif;
     font-size: 0.75rem;
 }
+.experience-internship_cards .card-footer a:hover{
+    animation: heartBeat;
+    animation-duration: 1.5s;
+}
 .experience-internship_cards .card-footer span{
     color: #de6a08;
     font-family: Audiowide, sans-serif;
@@ -112,7 +118,7 @@
     transform: translateX(-50%);
     width: 100%;
     height: 1px;
-    background: rgba(255, 115, 0, .25);
+    background: rgba(255, 115, 0, 50);
 }
 
 .experience-project{
@@ -126,8 +132,8 @@
     overflow: hidden;
     border-bottom: 1.25px solid #de6a08;
     margin-bottom: 1.5rem;
-    /* animation: fadeInRight;
-    animation-duration: 5s; */
+    animation: fadeInRight;
+    animation-duration: 5s;
 }
 
 .experience-project_title h2{
@@ -144,6 +150,93 @@
     animation-duration: 2s; */
 }
 
+.experience-project_cards{
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    height: 350px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: #102031;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #102031;
+    border-radius: 25px;
+  }
+
+.swiper-slide {
+
+    width: 520px;
+    height: 380px;
+    border-radius: 8px;
+    background: #102031;
+    max-width: calc(100% - 48px);
+
+  }
+
+  .card_slide {
+    height: 100%;
+    width: 100%;
+}
+
+/* .card_slide a{
+    position: relative;
+    height: max-content;
+    height: 210px;
+    display: block;
+    margin: 0.5rem;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+} */
+.card_slide a img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom,rgba(255,0,0,.1) 0%,transparent 32px,transparent 100%);
+}
+
+.card_slide .slide-content {
+    font-family: Poppins, sans-serif;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 88px 16px 24px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.75));
+    border-radius: 0 0 8px 8px;
+    color: white;
+}
+
+.card_slide .slide-content h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.1;
+}
+.card_slide .slide-content p {
+    margin: 8px 0 0;
+    opacity: .65;
+    font-size: 14px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.card_slide .card-content p{
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+}
 
 @media screen and (max-width: 991px){
     .experience-internship{
