@@ -86,6 +86,7 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
+                        <!-- BOULDER DASH SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/boulderdash.jpg" alt="boulderdash" /></a>
                                 <div class="slide-content">
@@ -95,6 +96,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <!-- CENTAURES SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/centaures.jpg" alt="centaures" /></a>
                                 <div class="slide-content">
@@ -104,6 +106,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <!-- VCL SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/vcl.png" alt="vcl" /></a>
                                 <div class="slide-content">
@@ -113,6 +116,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <!-- PMF SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/pmf.png" alt="pmf" /></a>
                                 <div class="slide-content">
@@ -122,6 +126,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <!-- WARRIOR SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/warrior.jpg" alt="warrior" /></a>
                                 <div class="slide-content">
@@ -131,6 +136,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <!-- WAW SLIDE -->
                             <div class="card_slide">
                                 <a href=""><img class="card-img" src="./images/waw.png" alt="waw" /></a>
                                 <div class="slide-content">
@@ -139,8 +145,20 @@
                                   </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <!-- OLD PORTFOLIO -->
+                            <div class="card_slide">
+                                <a href="https://fredt-portfolio.netlify.app/"><img class="card-img" src="./images/portimg.jpg" alt="old" /></a>
+                                <div class="slide-content">
+                                    <h2>Previous portfolio</h2>
+                                    <p>My first portfolio made some month ago</p>
+                                  </div>
+                            </div>
+                        </div>
                       
                     </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                     <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
             <!-- Initialize Swiper -->
                     <script type="module">
@@ -156,7 +174,7 @@
                             depth: 100,
                             modifier: 2,
                             slideShadows: true,
-                        },
+                        },loop: true,
                         pagination: {
                             el: '.swiper-pagination',
                         },
