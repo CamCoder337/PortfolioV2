@@ -104,6 +104,9 @@
         font-size: 1rem;
         font-weight: 100;
     }
+    .wrapper{
+        padding-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 1340px){
