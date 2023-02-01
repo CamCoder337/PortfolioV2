@@ -278,6 +278,9 @@ button a:hover{
         left: 70%;
         animation: object2 6s linear infinite;
     }
+    .wrapper{
+        padding-bottom: 7rem;
+    }
 }
 
 
