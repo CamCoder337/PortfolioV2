@@ -158,8 +158,11 @@
                         </div>
                       
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+                
                     <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
             <!-- Initialize Swiper -->
                     <script type="module">
@@ -178,6 +181,10 @@
                         },loop: true,
                         pagination: {
                             el: '.swiper-pagination',
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
                         },
                         });
                     </script>

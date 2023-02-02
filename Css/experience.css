@@ -237,6 +237,9 @@
     font-family: Poppins, sans-serif;
     font-weight: 200;
 }
+.swiper-button-prev, .swiper-button-next{
+    color: #de6a08;
+}
 
 @media screen and (max-width: 991px){
     .experience-internship{
@@ -244,6 +247,11 @@
     }
     .experience-project{
         padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
     }
 }
 
